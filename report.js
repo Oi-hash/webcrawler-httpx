@@ -6,7 +6,7 @@ function printReport(pages) {
     for (const sortedPage of sortedPages) {
         const url = sortedPage[0]
         const hits = sortedPage[1]
-        console.log(`Hits:[${hits}] Page: [${url}]`)
+        console.log(`Hits:[${hits}] Page: [${url}]->`)
     }
 }
 function sortPages(pages) {
