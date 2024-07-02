@@ -16,7 +16,6 @@ test('normalizeURL # Trailing slash strip [Logic]', () => {
     expect(actual).toEqual(expected)
 })
 
-
 test('normalizeURL # Capitals [URL constructor]', () => {
     const input = 'https://blog.BOOT.dev/path/'
     const actual = normalizeURL(input)
@@ -108,6 +107,8 @@ test('getURLsFromHTML # Invalid URL', () => {
     const expected = []
     expect(actual).toEqual(expected)
 })
+
+
 
 
 
