@@ -1,12 +1,12 @@
 function printReport(pages) {
-    console.log(`-------------`)
-    console.log(`Report`)
-    console.log(`-------------`)
+    console.log(`=====================`)
+    console.log(`====== Report =======`)
+    console.log(`=====================`)
     const sortedPages = sortPages(pages)
     for (const sortedPage of sortedPages) {
         const url = sortedPage[0]
         const hits = sortedPage[1]
-        console.log(`Hits:[${hits}] Page: [${url}]->`)
+        console.log(`Hits:[${hits}] Page: [${url}]`)
     }
 }
 function sortPages(pages) {

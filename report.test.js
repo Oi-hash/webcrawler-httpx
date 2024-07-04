@@ -23,3 +23,10 @@ test('sortPages # ', () => {
     expect(actual).toEqual(expected)
 })
 
+test('sortPages null case', () => {
+    const input = {}
+    const actual = sortPages(input)
+    const expected = []
+    expect(actual).toEqual(expected)
+  })
+

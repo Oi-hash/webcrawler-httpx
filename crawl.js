@@ -62,10 +62,11 @@ function getURLsFromHTML(htmlBody, baseURL) {
         } else {
             // absolute
             try {
+                //console.log(`Try: ${linkElement.href}`)
                 const urlObj = new URL(linkElement.href)
                 urls.push(urlObj.href)
             } catch (err) {
-                console.log(`Error absolute url: ${err.message}`)
+                console.log(`Error absolute url: ${err.message} with ${linkElement.href}`)
             }
         }
     }
