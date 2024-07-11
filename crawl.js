@@ -26,7 +26,7 @@ async function crawlPage(baseURL, currentURL, pages) {
         }
         const contentType = resp.headers.get(`Content-Type`)
         if (!contentType.includes(`text/html`)) {
-            console.log(`[!] Non Html response -> [${contentType}] -> [${currentURL}]`)
+            console.log(`[!] [${contentType}] -> [${currentURL}]`)
             return pages
         }
         const htmlBody = await resp.text()
